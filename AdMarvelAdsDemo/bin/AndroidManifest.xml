@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.admarvel.androidads"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:hardwareAccelerated="true"
+     >
+<!--      android:hardwareAccelerated="true" -->
+
+    <uses-sdk android:minSdkVersion="3" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name="com.admarvel.androidads.AdMarvelMain"
+             >
+             
+<!--                         android:name="com.admarvel.androidads.AdMarvelBannerAdsDemoActivity" -->
+            
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/banner_activity_name"
+            android:name="com.admarvel.androidads.AdMarvelBannerAdsDemoActivity">
+            
+        </activity>
+        
+                <activity android:label="@string/interstitial_activity_name"
+            android:name="com.admarvel.androidads.AdMarvelInterstitialDemoActivity">
+            
+        </activity>
+        
+         <activity android:name="com.admarvel.android.ads.AdMarvelActivity"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+			android:hardwareAccelerated="true"
+		>
+<!--             android:hardwareAccelerated="true" -->
+		</activity>
+		<activity android:name="com.admarvel.android.ads.AdMarvelVideoActivity"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+			android:hardwareAccelerated="true"
+			>
+		</activity>
+		
+		<provider android:name="com.admarvel.android.ads.AdMarvelLocalFileContentProvider"
+          android:authorities="com.admarvel.androidbanneradsdemo.AdMarvelLocalFileContentProvider" />
+    </application>
+    
+        	<supports-screens android:largeScreens="true"
+	    			  android:xlargeScreens="true"
+	    			  android:normalScreens="true"
+	    			  android:smallScreens="true"             
+                android:anyDensity="true" /> 
+                
+     <uses-permission android:name="android.permission.INTERNET" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+     
+     <!-- Below permissions are required only if you want to serve location based ads -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	
+	
+	<!-- Below permissions are required if you want to show click to create event ads -->
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+
+</manifest>

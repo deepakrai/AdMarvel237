@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:admarvel="http://schemas.android.com/apk/res/com.admarvel.androidads"
+	android:id="@+id/mainid"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    	<com.admarvel.android.ads.AdMarvelView
+		android:id="@+id/ad"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		admarvel:textBackgroundColor="#726D6D"
+		admarvel:textFontColor="#00FF00"
+		admarvel:textBorderColor="#000000"
+	/>
+	 
+    <TextView  
+    	android:id="@+id/partnerid"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:text="Partner ID: "
+    />
+    
+	<EditText android:text="@+id/EditText01" 
+			  android:id="@+id/EditText01" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  />
+		
+	<TextView  
+    	android:id="@+id/siteid"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:text="Site ID: "
+    />	  
+    
+	<EditText android:text="@+id/EditText02" 
+			  android:id="@+id/EditText02" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  />
+	
+	<RelativeLayout android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" >
+	<Button android:text="Get Ad" 
+			android:id="@+id/Button01" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:clickable="true" 
+			android:bufferType="normal" 
+			android:layout_centerInParent="true"
+			/>
+	</RelativeLayout>
+	
+
+
+</LinearLayout>

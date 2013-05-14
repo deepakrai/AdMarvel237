@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <LinearLayout  -->
+<!-- 			  xmlns:admarvel="http://schemas.android.com/apk/res/com.admarvel.androidads" -->
+<!-- 	android:id="@+id/mainid" -->
+<!--     android:orientation="vertical" -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="fill_parent" -->
+<!--     > -->
+    
+	<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:admarvel="http://schemas.android.com/apk/res/com.admarvel.androidads" 
+	    
+	    android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" 
+			>
+
+		<Button
+		    android:id="@+id/Button01"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="40dp"
+		    android:bufferType="normal"
+		    android:clickable="true"
+		    android:text="Banner" />
+
+		<Button
+		    android:id="@+id/Button02"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/Button01"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="29dp"
+		    android:bufferType="normal"
+		    android:clickable="true"
+		    android:text="Interstitial" />
+
+	</RelativeLayout>
+	
+
+
+<!-- </LinearLayout> -->
